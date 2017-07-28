@@ -46,7 +46,7 @@ Para isso, vamos:
 * Apontar que o método `start()` da classe `Main()` é o método principal da classe e deve ser o chamado quando o arquivo é executado, nas linhas 7 e 8.
 
 ```
-#!/usr/bin/python
+#!/usr/bin/env
 import luis
 
 LUIS_ENDPOINT = "" # Coloque aqui a URL do seu endpoint
