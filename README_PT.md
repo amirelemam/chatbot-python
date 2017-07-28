@@ -59,6 +59,7 @@ if __name__ == '__main__':
 ### Adicionando o dicionário de respostas
 
 Agora vamos criar categorias de perguntas e suas respostas.  
+
 Para isso, vamos criar um dicionário `ANSWERS`, que recebe como chave a categoria, chamada de intent pelo LUIS, e o valor do dicionário é a resposta.   
 
 Este dicionário será criado localmente na classe `Main()`. Vamos criar também o método `start()`, para manter o código de acordo com a especificação de execução, feitas no passo anterior.  
@@ -129,7 +130,7 @@ Coloque este código dentro da classe `Main()`, logo acima do método `start()`
         return answer
 ```
 
-### Treinamento das intents
+### Treinamento das intents no Microsoft LUIS
 
 Nosso código está pronto, porém as perguntas não serão entendidas sem que o LUIS tenha sido treinado.  
 
