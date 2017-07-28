@@ -188,6 +188,13 @@ Toda vez que fizer um novo treinamento, as alterações só estarão disponívei
 
 > A explicação detalhada de como fazer a publicação do App do LUIS por ser encontrada [aqui](https://docs.microsoft.com/pt-br/azure/cognitive-services/luis/publishapp)
 
+### Execução 
+
+Agora está tudo pronto! Basta rodar o script e tudo deve funcionar perfeitamente.  
+
+Para isso, dentro da pasta `chatbot-python`, execute o seguinte comando e manda uma mensagem para o bot:  
+```python3 chatbot.py```
+
 ### Licença
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE)
