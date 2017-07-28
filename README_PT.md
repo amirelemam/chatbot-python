@@ -62,7 +62,8 @@ Agora vamos criar categorias de perguntas e suas respostas.
 
 Para isso, vamos criar um dicionário `ANSWERS`, que recebe como chave a categoria, chamada de intent pelo LUIS, e o valor do dicionário é a resposta.   
 
-Este dicionário será criado localmente na classe `Main()`. Vamos criar também o método `start()`, para manter o código de acordo com a especificação de execução, feitas no passo anterior.  
+Este dicionário será criado localmente na classe `Main()`.  
+Vamos criar também o método `start()`, para manter o código de acordo com a especificação de execução, feitas no passo anterior.  
 
 O código abaixo deve ser inserido na linha 6, abaixo da inicialização do módulo `luis` na constante `LUIS`.   
 
@@ -140,7 +141,7 @@ Primeiro, vamos criar o app:
 * Coloque o idioma para "Brazilian Portuguese".
 * Como Enpoint key, selecione "BoostrapKey".
 
-A explicação detalhada de como criar o app no LUIS por ser encontrada [aqui](https://docs.microsoft.com/pt-br/azure/cognitive-services/luis/create-new-app).   
+> A explicação detalhada de como criar o app no LUIS por ser encontrada [aqui](https://docs.microsoft.com/pt-br/azure/cognitive-services/luis/create-new-app).   
 
 Agora que temos o App criado, temos que adicionar as intents:  
 
@@ -150,7 +151,7 @@ Agora que temos o App criado, temos que adicionar as intents:
 * Clique no botão **Save**.
 * Faça este passo até que todas as chaves do dicionário `ANSWERS` tenham uma intent no Microsoft LUIS. A intent None é criada por padrão e não precisa ser criada novamente.  
 
-A explicação detalhada de como criar intents no LUIS por ser encontrada [aqui](https://docs.microsoft.com/pt-br/azure/cognitive-services/luis/add-intents).   
+> A explicação detalhada de como criar intents no LUIS por ser encontrada [aqui](https://docs.microsoft.com/pt-br/azure/cognitive-services/luis/add-intents).   
 
 Depois de criada, a intent precisa ser treinada:  
 
@@ -159,7 +160,7 @@ Depois de criada, a intent precisa ser treinada:
 * Crie um número razoável de mensagens. Quanto mais mensagens, mais preciso fica o sistema de identificação.
 * Crie mensagens para todas as intents. Apesar de ser opcional fazer isso para a intent None, é recomendável que mensagens não relacionadas a nenhuma das outras intents sejam inseridas em None.  
 
-A explicação detalhada de como adicionar mensagens numa intent do LUIS por ser encontrada [aqui](https://docs.microsoft.com/pt-br/azure/cognitive-services/luis/add-example-utterances)
+> A explicação detalhada de como adicionar mensagens numa intent do LUIS por ser encontrada [aqui](https://docs.microsoft.com/pt-br/azure/cognitive-services/luis/add-example-utterances)
 
 Depois de criar todas as intents e inserir mensagens e todas elas, precisamos fazer o treinamento em si.  
 
@@ -167,7 +168,7 @@ Depois de criar todas as intents e inserir mensagens e todas elas, precisamos fa
 * Clique no botão **Train Application**.
 * Ao final do treinamento, é possível testar a precisão do treinamento na caixa de input **Type a test utterance & press Enter**.
 
-A explicação detalhada de como fazer o treinamento no LUIS por ser encontrada [aqui](https://docs.microsoft.com/pt-br/azure/cognitive-services/luis/train-test)
+> A explicação detalhada de como fazer o treinamento no LUIS por ser encontrada [aqui](https://docs.microsoft.com/pt-br/azure/cognitive-services/luis/train-test)
 
 Caso o treinamento não esteja satisfatório, coloque mais mensagens nas intents (passo anterior) e refaça o treinamento (este passo).  
 
@@ -185,7 +186,7 @@ LUIS_ENDPOINT = "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/LETRA
 
 Toda vez que fizer um novo treinamento, as alterações só estarão disponíveis após fazer a publicação (este passo). A publicação tem que ser feita todas as vezes.   
 
-A explicação detalhada de como fazer a publicação do App do LUIS por ser encontrada [aqui](https://docs.microsoft.com/pt-br/azure/cognitive-services/luis/publishapp)
+> A explicação detalhada de como fazer a publicação do App do LUIS por ser encontrada [aqui](https://docs.microsoft.com/pt-br/azure/cognitive-services/luis/publishapp)
 
 ### Licença
 
