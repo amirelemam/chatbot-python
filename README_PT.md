@@ -26,7 +26,7 @@ Este código refere-se à palestra "Chatbot em Python", do SciPy #1 de 29/07/201
 * Instale o módulo Virtualenv para isolar o código:  
 ```$ pip3 install virtualenv```  
 * Crie o virtual environment:   
-```virtualenv chatbot-python```  
+```$ virtualenv chatbot-python```  
 * Entre na pasta do projeto:  
 ```$ cd chatbot-python```  
 * Ative o virtual environment:  
@@ -193,7 +193,7 @@ Toda vez que fizer um novo treinamento, as alterações só estarão disponívei
 Agora está tudo pronto! Basta rodar o script e tudo deve funcionar perfeitamente.  
 
 Para isso, dentro da pasta `chatbot-python`, execute o seguinte comando e manda uma mensagem para o bot:  
-```python3 chatbot.py```
+```$ python3 chatbot.py```
 
 ### Licença
 
