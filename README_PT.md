@@ -50,7 +50,7 @@ Para isso, vamos:
 import luis
 
 LUIS_ENDPOINT = "" # Coloque aqui a URL do seu endpoint
-LUIS = luis.Luis(url=LUIS_ENDPOINT")
+LUIS = luis.Luis(url=LUIS_ENDPOINT)
 
 if __name__ == '__main__':
     Main().start()
