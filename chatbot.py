@@ -1,7 +1,7 @@
 #!/usr/bin/env
 import luis
 
-LUIS_ENDPOINT = "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/9fcf2e84-fef8-46e1-b4ee-992cd024c888?subscription-key=94c91f8f3a0d46d6bb516227bd208728&verbose=true&timezoneOffset=0&q="
+LUIS_ENDPOINT = ""
 
 LUIS = luis.Luis(url=LUIS_ENDPOINT)
 
