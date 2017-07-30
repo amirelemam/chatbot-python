@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#!/usr/bin/env python
 import luis
 
 LUIS_ENDPOINT = "" # Coloque aqui a URL do seu endpoint
