@@ -46,7 +46,7 @@ Para isso, vamos:
 * Apontar que o método `start()` da classe `Main()` é o método principal da classe e deve ser o chamado quando o arquivo é executado, nas linhas 7 e 8.
 
 ```
-#!/usr/bin/env
+#!/usr/bin/env python
 import luis
 
 LUIS_ENDPOINT = "" # Coloque aqui a URL do seu endpoint
@@ -95,6 +95,7 @@ Depois, a mensagem recebida pelo usuário é armazenada numa variável. (linha 6
 Esta variável é passada como parâmetro para método `replies()` que fará a análise da mensagem e retornará a resposta. Daqui a pouco criaremos este método `replies()`. (linha 7)  
 A resposta, então, é exibida para o usuário. (linha 8).  
 Vamos colocar o processo de receber a mensagem e responder num loop, para que possa haver múltiplas interações.  
+Caso a mensagem seja de despedida, o bot é encerrado. (linhas 9 e 10)
 
 No método `start()`, substitua o `pass` pelo código abaixo.  
 
@@ -104,9 +105,11 @@ No método `start()`, substitua o `pass` pelo código abaixo.
         print("Início da interação:")
 
         while True:
-            question = input()
+            question = input("Usuário: ")
             answer = self.replies(question)
-            print(answer)
+            print(f"Bot: {answer}")
+            if answer == self.ANSWERS["GOODBYE"]:
+                break
 ```
 
 ### Identificando a melhor resposta
