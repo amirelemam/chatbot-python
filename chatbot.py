@@ -1,7 +1,7 @@
 #!/usr/bin/env
 import luis
 
-LUIS_ENDPOINT = ""
+LUIS_ENDPOINT = "" # Coloque aqui a URL do seu endpoint
 
 LUIS = luis.Luis(url=LUIS_ENDPOINT)
 
@@ -15,7 +15,7 @@ class Main(object):
         "ABOUT_PYTHON": "Python é a melhor linguagem de programação do mundo.",
         "WELCOME": "Oi amigo! Faça sua pergunta...",
         "GOODBYE": "Tchauzinho! :)",
-        "SENTIDO_VIDA": "O sentido da vida é programar em Python",
+        "SENTIDO_VIDA": "O sentido da vida é programar em Python.",
         "None": "Desculpe, não entendi. Por favor, tente escrever de outra forma."
     }
 
@@ -30,9 +30,9 @@ class Main(object):
         print("Início da interação:")
 
         while True:
-            question = input()
+            question = input("Usuário: ")
             answer = self.replies(question)
-            print(answer)
+            print(f"Bot: {answer}")
 
 
 if __name__ == '__main__':
