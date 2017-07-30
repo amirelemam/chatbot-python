@@ -33,6 +33,8 @@ class Main(object):
             question = input("Usuário: ")
             answer = self.replies(question)
             print(f"Bot: {answer}")
+            if answer == self.ANSWERS["GOODBYE"]:
+                break
 
 
 if __name__ == '__main__':
